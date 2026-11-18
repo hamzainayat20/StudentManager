@@ -1,0 +1,12 @@
+PR #9 merge attempt failed:
+405 Pull Request has merge conflicts
+
+Conflict in README.md - both branches changed the same line:
+<<<<<<< HEAD
+Project status: In Progress
+=======
+Project status: Active Development
+>>>>>>> conflict/status-b
+
+Cause: conflict/status-a and conflict/status-b were both created
+from the same commit, and both changed the same line differently.

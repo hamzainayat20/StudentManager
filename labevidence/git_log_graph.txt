@@ -1,0 +1,38 @@
+* 9da21c5 (HEAD -> main, origin/main, origin/HEAD) Add LABREPORT.md with assignment answers
+* 766c232 Add user guide in docs/userguide.md
+*   f393ea7 Merge conflict/status-b after resolving the conflict
+|\  
+| * cf1f252 (origin/conflict/status-b) Resolve merge conflict: keep Project status: In Progress
+| * 6c9028f Change project status to Active Development
+* |   3338e3f Merge conflict/status-a: update project status to In Progress
+|\ \  
+| |/  
+|/|   
+| * fb4040e (origin/conflict/status-a) Change project status to In Progress
+|/  
+* 3aead7e Add Project status: Planning to README
+*   1168634 Merge feature/deletetask: delete tasks by valid id
+|\  
+| * f2103f1 (origin/feature/deletetask) Add tests for deleting tasks
+| * 8c79f86 Add Delete task option to the menu
+| * 5f12838 Add delete_task to delete tasks by id
+|/  
+*   e081a65 Merge feature/completetask: mark tasks as completed
+|\  
+| * 394a77c (origin/feature/completetask) Add tests for completing tasks
+| * 1ef8b58 Add Complete task option to the menu
+| * 2ad0ae1 Add complete_task to mark tasks as completed
+|/  
+*   e8cc077 Merge feature/addtask: add task validation
+|\  
+| * d5a725b (origin/feature/addtask) Add tests for empty task titles
+| * 040844f Show a clear message when a task title is empty
+| * ef24156 Validate task title and reject empty titles
+|/  
+* 022e651 Update README with features, setup and usage
+* ce10ba2 Add tests for adding and listing tasks
+* a45b88c Add console menu to add and display tasks
+* 03f9e32 Add TaskManager with add and list tasks
+* 330a4da Add MIT license
+* c0fa6c2 Add Python .gitignore
+* 2e82437 Initial commit

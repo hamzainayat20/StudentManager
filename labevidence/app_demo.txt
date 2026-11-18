@@ -1,0 +1,64 @@
+
+Student Task Manager
+1. Add task
+2. Display tasks
+3. Complete task
+4. Delete task
+5. Exit
+Choose an option (1-5): Enter task title: Added task 1: Finish CSC418 lab
+
+Student Task Manager
+1. Add task
+2. Display tasks
+3. Complete task
+4. Delete task
+5. Exit
+Choose an option (1-5): Enter task title: Task title cannot be empty.
+
+Student Task Manager
+1. Add task
+2. Display tasks
+3. Complete task
+4. Delete task
+5. Exit
+Choose an option (1-5): 1. Finish CSC418 lab [not done]
+
+Student Task Manager
+1. Add task
+2. Display tasks
+3. Complete task
+4. Delete task
+5. Exit
+Choose an option (1-5): Enter task id to complete: Completed task 1: Finish CSC418 lab
+
+Student Task Manager
+1. Add task
+2. Display tasks
+3. Complete task
+4. Delete task
+5. Exit
+Choose an option (1-5): 1. Finish CSC418 lab [done]
+
+Student Task Manager
+1. Add task
+2. Display tasks
+3. Complete task
+4. Delete task
+5. Exit
+Choose an option (1-5): Enter task id to delete: Deleted task 1: Finish CSC418 lab
+
+Student Task Manager
+1. Add task
+2. Display tasks
+3. Complete task
+4. Delete task
+5. Exit
+Choose an option (1-5): No tasks yet.
+
+Student Task Manager
+1. Add task
+2. Display tasks
+3. Complete task
+4. Delete task
+5. Exit
+Choose an option (1-5): Goodbye.

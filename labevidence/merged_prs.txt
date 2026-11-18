@@ -1,0 +1,5 @@
+PR #5: Add task validation, reject empty titles - state=closed merged=True merged_at=2026-11-18T08:08:09Z
+PR #6: Mark tasks as completed - state=closed merged=True merged_at=2026-11-18T08:13:18Z
+PR #7: Delete tasks by valid id - state=closed merged=True merged_at=2026-11-18T08:15:39Z
+PR #8: Update project status to In Progress - state=closed merged=True merged_at=2026-11-18T08:18:56Z
+PR #9: Update project status to Active Development - state=closed merged=True merged_at=2026-11-18T08:21:22Z

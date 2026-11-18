@@ -1,0 +1,21 @@
+test_deliberate_failure (test_task_manager.TestDeliberateFailure.test_deliberate_failure) ... FAIL
+test_add_task (test_task_manager.TestTaskManager.test_add_task) ... ok
+test_add_task_rejects_empty_title (test_task_manager.TestTaskManager.test_add_task_rejects_empty_title) ... ok
+test_complete_task (test_task_manager.TestTaskManager.test_complete_task) ... ok
+test_complete_task_with_invalid_id (test_task_manager.TestTaskManager.test_complete_task_with_invalid_id) ... ok
+test_delete_task (test_task_manager.TestTaskManager.test_delete_task) ... ok
+test_delete_task_with_invalid_id (test_task_manager.TestTaskManager.test_delete_task_with_invalid_id) ... ok
+
+======================================================================
+FAIL: test_deliberate_failure (test_task_manager.TestDeliberateFailure.test_deliberate_failure)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/failtest/tests/test_task_manager.py", line 55, in test_deliberate_failure
+    self.assertEqual(1, 2, "Deliberate failure for the Actions demo")
+AssertionError: 1 != 2 : Deliberate failure for the Actions demo
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.003s
+
+FAILED (failures=1)
+exit:1
