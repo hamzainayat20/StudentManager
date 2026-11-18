@@ -2,10 +2,10 @@ import unittest
 
 
 class TestDemoFail(unittest.TestCase):
-    # Deliberate demo failure: shows a failed GitHub Actions run.
+    # Demo test fixed: it failed on purpose first, now it passes.
     # This file is only on the demo/failing-test branch and is not merged.
     def test_demo_failure(self):
-        self.assertEqual(1, 2)
+        self.assertEqual(1, 1)
 
 
 if __name__ == "__main__":
