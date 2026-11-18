@@ -30,7 +30,9 @@ class TaskManager:
             json.dump(self.tasks, f, indent=2)
 
     def add_task(self, title):
-        """Add a task."""
+        """Add a task. Empty titles are rejected."""
+        if title is None or not str(title).strip():
+            raise ValueError("Task title cannot be empty.")
         task = {"id": self.next_id, "title": str(title).strip(), "completed": False}
         self.next_id += 1
         self.tasks.append(task)
