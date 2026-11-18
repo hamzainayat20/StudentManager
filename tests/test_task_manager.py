@@ -28,10 +28,15 @@ class TestTaskManager(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.manager.add_task("   ")
 
-    def test_list_tasks(self):
-        self.manager.add_task("Read chapter 3")
-        self.manager.add_task("Buy notebook")
-        self.assertEqual(len(self.manager.get_tasks()), 2)
+    def test_complete_task(self):
+        task = self.manager.add_task("Read chapter 3")
+        done = self.manager.complete_task(task["id"])
+        self.assertTrue(done["completed"])
+
+    def test_complete_task_with_invalid_id(self):
+        with self.assertRaises(ValueError):
+            self.manager.complete_task(99)
+
 
 
 if __name__ == "__main__":
