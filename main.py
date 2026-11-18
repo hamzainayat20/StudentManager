@@ -8,7 +8,8 @@ def show_menu():
     print("1. Add task")
     print("2. Display tasks")
     print("3. Complete task")
-    print("4. Exit")
+    print("4. Delete task")
+    print("5. Exit")
 
 
 def display_tasks(manager):
@@ -33,7 +34,7 @@ def main():
     manager = TaskManager()
     while True:
         show_menu()
-        choice = input("Choose an option (1-4): ").strip()
+        choice = input("Choose an option (1-5): ").strip()
         if choice == "1":
             title = input("Enter task title: ")
             try:
@@ -53,10 +54,19 @@ def main():
             except ValueError as e:
                 print(e)
         elif choice == "4":
+            task_id = read_id("Enter task id to delete: ")
+            if task_id is None:
+                continue
+            try:
+                task = manager.delete_task(task_id)
+                print(f'Deleted task {task["id"]}: {task["title"]}')
+            except ValueError as e:
+                print(e)
+        elif choice == "5":
             print("Goodbye.")
             break
         else:
-            print("Please choose 1, 2, 3 or 4.")
+            print("Please choose 1, 2, 3, 4 or 5.")
 
 
 if __name__ == "__main__":
