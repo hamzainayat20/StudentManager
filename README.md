@@ -1,5 +1,7 @@
 # Student Task Manager
 
+Project status: Planning
+
 A small Python console app to add, display, complete and delete student tasks. Tasks are saved in `tasks.json`, so they stay there after the app closes.
 
 Author: Hamza Inayat, SP23-BSE-120
