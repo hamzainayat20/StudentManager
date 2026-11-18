@@ -37,6 +37,14 @@ class TestTaskManager(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.manager.complete_task(99)
 
+    def test_delete_task(self):
+        task = self.manager.add_task("Buy notebook")
+        self.manager.delete_task(task["id"])
+        self.assertEqual(self.manager.get_tasks(), [])
+
+    def test_delete_task_with_invalid_id(self):
+        with self.assertRaises(ValueError):
+            self.manager.delete_task(99)
 
 
 if __name__ == "__main__":
