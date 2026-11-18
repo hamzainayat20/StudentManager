@@ -51,3 +51,11 @@ class TaskManager:
                 return task
         raise ValueError(f"No task found with id {task_id}.")
 
+    def delete_task(self, task_id):
+        """Delete the task with this id. Only a valid id works."""
+        for task in self.tasks:
+            if task["id"] == task_id:
+                self.tasks.remove(task)
+                self.save()
+                return task
+        raise ValueError(f"No task found with id {task_id}.")
